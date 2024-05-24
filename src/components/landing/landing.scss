@@ -1,0 +1,66 @@
+.landing {
+  height: calc(100vh - 100px);
+  width: 100%;
+  .wrapper {
+    position: relative;
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    padding: 0 20px;
+    .intro{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      gap: 20px;
+      width: 70%;
+      word-break: keep-all;
+      .name{
+        margin-top: -4em;
+        font-size: 4em ;
+      }
+      .occupation{
+        font-size: 3em;
+      }
+      
+      .buttons{
+        display: flex;
+        gap: 20px;
+        button{
+          border: 1px solid white;
+          border-radius: 0.5em;
+          padding: 9px;
+          cursor: pointer;
+        }
+      }      
+      img{
+        height: 100px;
+        object-fit: none;
+        align-self: flex-start;
+      }
+    }
+  }
+  .container {
+    // background-color: red;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    img{
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  .slideText {
+    position: absolute;
+    bottom: -7rem;
+    font-size: 50vh;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff07;
+    z-index: -1;
+  }
+}

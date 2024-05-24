@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.2.5",
+    "lucide-react": "^0.379.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-native-dotenv": "^3.4.11",
+    "sass": "^1.77.2"
   },
   "devDependencies": {
     "@types/react": "18.2.15",
@@ -21,6 +27,6 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
-    "vite": "4.4.5"
+    "vite": "^4.5.3"
   }
 }
