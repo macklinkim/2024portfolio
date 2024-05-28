@@ -7,8 +7,9 @@ function SideBar() {
 	const [open, setOpen] = useState(false);
 	const variants = {
 		enter: {
-      clipPath: 'circle(1200px at 50px 50px)',
+      clipPath: 'circle(1600px at 50px 50px)',
       transition: { 
+        opacity:0,
         type: 'spring',
         stiffness: 100,
         damping: 30,
@@ -17,6 +18,7 @@ function SideBar() {
 		exit: {
 			clipPath: 'circle(30px at 50px 50px)',
 			transition: { 
+        opacity:0,
         delay: 0.2, 
         type: 'spring',
         stiffness: 400,

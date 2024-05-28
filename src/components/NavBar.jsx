@@ -37,7 +37,7 @@ const Navbar = () => {
 					</a>
 					<a href='#'>
 						<img
-							src='/naver.png'
+							src='/naver2.png'
 							alt=''
 						/>
 					</a>

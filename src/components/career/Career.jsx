@@ -31,9 +31,9 @@ function Career() {
 	const Single = ({ item }) => {
 		const ref = useRef();
 		const { scrollYProgress } = useScroll({ target: ref });
-		const y = useTransform(scrollYProgress, [0, 1], ['-30%', '30%']);
+		const y = useTransform(scrollYProgress, [0, 1], ['-300', '300']);
 		return (
-			<section ref={ref}>
+			<section>
 				<div className='container'>
 					<div className='wrapper'>
 						<div
@@ -45,7 +45,10 @@ function Career() {
 								alt=''
 							/>
 						</div>
-						<motion.div className='desc' style={{ y }}>
+						<motion.div
+							className='desc'
+							style={{ y }}
+						>
 							<h2>{item.name}</h2>
 							<p>{item.description}</p>
 							<button>View Details</button>
@@ -59,7 +62,7 @@ function Career() {
 	const { scrollYProgress } = useScroll({ target: ref, offset: ['end end', 'start start'] });
 	const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 	return (
-		<div className='career'>
+		<div className='career' ref={ref}>
 			<div className='progress'>
 				<h1>프로젝트들</h1>
 				<motion.div

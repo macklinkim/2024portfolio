@@ -1,6 +1,7 @@
+import { useRef } from 'react';
 import './landing.scss';
 import { motion } from 'framer-motion';
-function Landing() {
+function Landing({ link1, link2 }) {
 	const variants = {
 		initial: {
 			x: -500,
@@ -14,14 +15,14 @@ function Landing() {
 				staggerChildren: 0.3,
 			},
 		},
-    scrollButton: {
-      opacity: 0,
-      y: 10,
-      transition: {
-        duration: 2,
-        repeat: Infinity,
-      },
-    },
+		scrollButton: {
+			opacity: 0,
+			y: 10,
+			transition: {
+				duration: 2,
+				repeat: Infinity,
+			},
+		},
 	};
 	const sliderVariants = {
 		initial: {
@@ -33,9 +34,13 @@ function Landing() {
 				repeat: Infinity,
 				repeatType: 'loop',
 				duration: 20,
-        repeatDelay: 0,
+				repeatDelay: 0,
 			},
 		},
+	};
+
+	const moveTo = goto => {
+		goto === 'projects' ? link1.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) : link2.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	};
 	return (
 		<div className='landing'>
@@ -62,27 +67,40 @@ function Landing() {
 						variants={variants}
 						className='buttons'
 					>
-						<motion.button variants={variants}>최근 작업물</motion.button>
-						<motion.button variants={variants}>연락처</motion.button>
+						<motion.button
+							onClick={() => moveTo('projects')}
+							variants={variants}
+						>
+							최근 작업물
+						</motion.button>
+						<motion.button
+							onClick={() => moveTo('contacts')}
+							variants={variants}
+						>
+							연락처
+						</motion.button>
 					</motion.div>
 					<motion.img
 						variants={variants}
-            animate="scrollButton"
+						animate='scrollButton'
 						src='/scroll.png'
 						alt='scroll'
 					/>
 				</motion.div>
 			</div>
-			<motion.div
+			{/* <motion.div
 				variants={sliderVariants}
 				initial='initial'
 				animate='animate'
 				className='slideText'
-			>Frontend, Backend, Fullstack</motion.div>
+			>
+				Frontend, Backend, Fullstack
+			</motion.div> */}
 			<div className='container'>
 				<img
-					src='/kch2.png'
+					src='/kch.png'
 					alt='main'
+					className='profile'
 				/>
 			</div>
 		</div>

@@ -12,7 +12,8 @@ function Contact() {
 			opacity: 0,
 		},
 		animate: {
-			y: 0,
+			y: 10,
+			x: 5,
 			opacity: 1,
 			transition: {
 				duration: 1,
@@ -32,7 +33,7 @@ function Contact() {
 				setSuccess(true);
 			},
 			error => {
-        console.log(error);
+				console.log(error);
 				setError(true);
 			}
 		);
@@ -77,7 +78,7 @@ function Contact() {
 					className='emailSvg'
 					initial={{ opacity: 1 }}
 					whileInView={{ opacity: 0 }}
-					transition={{ delay: 3, duration: 1 }}
+					transition={{ delay: 2, duration: 1 }}
 				>
 					<svg
 						width='600px'
@@ -105,18 +106,18 @@ function Contact() {
 					<input
 						type='text'
 						required
-						placeholder='Name'
+						placeholder='제목'
 						name='name'
 					/>
 					<input
 						type='email'
 						required
-						placeholder='Email'
+						placeholder='보내는분 메일주소'
 						name='email'
 					/>
 					<textarea
 						rows={8}
-						placeholder='Message'
+						placeholder='연락 내용'
 						name='message'
 					/>
 					<button type='submit'>메일보내기</button>
