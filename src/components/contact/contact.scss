@@ -21,6 +21,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-left: 20%;
+    margin-top: -60px;
 		@include mobile {
 			flex: unset;
 			margin-left: unset;
@@ -32,7 +33,10 @@
 			display: flex;
 		}
 		.item {
+      margin-left: 140px;
+      align-self: start;
 			@include mobile {
+        margin-left: unset;
 				align-items: center;
 				justify-content: center;
 				align-self: center;

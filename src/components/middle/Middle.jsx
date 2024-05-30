@@ -18,21 +18,21 @@ const Middle = ({ type }) => {
 			className='middle'
 			ref={ref}
 			style={{
-				background: type === 'aboutMe' ? 'linear-gradient(180deg, #111132, #0c0c1d)' : 'linear-gradient(180deg, #111132, #505064)',
+				background: type === 'Project' ? 'linear-gradient(180deg, #111132, #0c0c1d)' : 'linear-gradient(180deg, #111132, #505064)',
 			}}
 		>
 			<motion.h1
 				className='title'
 				style={{ y: yText }}
 			>
-				{type === 'aboutMe' ? 'About Me?' : 'Projects?'}
+				{type === 'Project' ? 'Project' : type}
 			</motion.h1>
 			<motion.div className='mountains'></motion.div>
 			<motion.div
 				className='planets'
 				style={{
 					y: yBg,
-					backgroundImage: `url(${type === 'aboutMe' ? '/planets.png' : '/sun.png'})`,
+					backgroundImage: `url(${type === 'Project' ? '/planets.png' : '/sun.png'})`,
 				}}
 			></motion.div>
 			<motion.div

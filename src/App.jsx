@@ -15,14 +15,14 @@ const App = () => {
 				<Navbar />
 				<Landing link1={landingLink1} link2 = {landingLink2}/>
 			</section>
-			<section  id='aboutMe'>
-				<Middle  type='aboutMe'/>
-			</section>
-			<Career/>
-			<section ref={landingLink1} id='Projects'>
-				<Middle type='projects'/>
+			<section ref={landingLink1} id='CAREER'>
+				<Middle type='CAREER'/>
 			</section>
 			<section><Projects/></section>
+			<section  id='Project'>
+				<Middle  type='Project'/>
+			</section>
+			<Career/>
 			<section ref={landingLink2} id='Contact'><Contact/></section>
 		</div>
 	);

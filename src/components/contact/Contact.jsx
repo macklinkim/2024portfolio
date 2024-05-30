@@ -56,21 +56,21 @@ function Contact() {
 					variants={variants}
 				>
 					<h2>Email</h2>
-					<span>aDgkS@example.com</span>
+					<span>kopsert@naver.com</span>
 				</motion.div>
 				<motion.div
 					className='item'
 					variants={variants}
 				>
 					<h2>Blog</h2>
-					<span>aDgkS@example.com</span>
+					<span>https://blog.naver.com/kopsert</span>
 				</motion.div>
 				<motion.div
 					className='item'
 					variants={variants}
 				>
 					<h2>Phone</h2>
-					<span>(+82) 010-1234-0100</span>
+					<span>(+82) 010-3340-1613</span>
 				</motion.div>
 			</motion.div>
 			<motion.div className='formContainer'>
