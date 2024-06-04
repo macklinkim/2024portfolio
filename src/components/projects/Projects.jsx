@@ -51,14 +51,13 @@ function Projects() {
 				</div>
 				<div className='desc'>
 					<h1>
-						<motion.b whileHover={{ color: 'orange' }}>HTML & CSS, </motion.b>
-						<motion.b whileHover={{ color: 'orange' }}>JavaScript, </motion.b>
-						<motion.b whileHover={{ color: 'orange' }}>React, </motion.b>
-						<motion.b whileHover={{ color: 'orange' }}>TypeScript, </motion.b>
-						<motion.b whileHover={{ color: 'orange' }}>NextJS, </motion.b>
+						<motion.b whileHover={{ color: 'orange' }}>숭실대 컴퓨터공학 졸업, </motion.b>
+						<motion.b whileHover={{ color: 'orange' }}>정보처리기사, </motion.b>
+						<motion.b whileHover={{ color: 'orange' }}>토익 835, </motion.b>
+						<motion.b whileHover={{ color: 'orange' }}>멋사 Frontend 교육 수료(외 직업훈련 11개)</motion.b>
 					</h1>
 				</div>
-				<button>이력서 및 경력 기술서 요청하기</button>
+				<button> 이력서 및 경력 기술서 요청하기</button>
 			</motion.div>
 			<motion.div
 				className='list'
