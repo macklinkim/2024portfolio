@@ -4,7 +4,7 @@ import Career from './components/career/Career';
 import Contact from './components/contact/Contact';
 import Landing from './components/landing/Landing';
 import Middle from './components/middle/Middle';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Projects from './components/projects/Projects';
 const App = () => {
   const landingLink1 = useRef([]);
