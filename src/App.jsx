@@ -12,7 +12,7 @@ const App = () => {
 	return (
 		<div>
 			<section id='Home'>
-				<Navbar />
+				<NavBar />
 				<Landing link1={landingLink1} link2 = {landingLink2}/>
 			</section>
 			<section ref={landingLink1} id='CAREER'>
