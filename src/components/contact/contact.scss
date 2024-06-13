@@ -25,7 +25,7 @@
 		@include mobile {
 			flex: unset;
 			margin-left: unset;
-			gap: 20px;
+			gap: 13px;
 			text-align: center;
 			align-items: center;
 			justify-content: flex-end;
@@ -82,7 +82,8 @@
 			flex-direction: column;
 			gap: 20px;
       @include mobile {
-        padding-top: 30px;
+        gap: 15px;
+        padding-top: 10px;
       }
 			input,
 			textarea {

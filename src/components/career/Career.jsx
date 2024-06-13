@@ -12,11 +12,10 @@ function Career() {
 			id: 1,
 			name: 'HTML/CSS',
 			imageSrc: ['css01.png', 'css02.png', 'css03.png', 'css04.png', 'css05.png', 'css06.png'],
-			description: 'HTML과 CSS를 다뤄보며 기본적으로 익힌 프로젝트들입니다.\n멋쟁이 사자들 부트캠프 교육과정에 작성한 프로젝트들이며 \nPureCSS위주로 개발했습니다.',
+			description: 'HTML과 CSS를 다뤄보며 기본적으로 익힌 프로젝트들입니다.\n멋쟁이 사자들 부트캠프 교육과정에 작성한 과제',
 			links: [
 				{ title: '첫CSS 과제 Profile', address: 'https://macklinkim.github.io/study/css_study/css_study_01_profile/' },
 				{ title: 'Modal 생성', address: 'https://macklinkim.github.io/study/css_study/css_study_23_modal_final/modal-step/' },
-				{ title: 'Layout 잡기', address: 'https://macklinkim.github.io/study/css_study/css_study_24_layout_page/' },
 				{ title: '로그인 화면 제작', address: 'https://macklinkim.github.io/study/css_study/css_study_20_data/' },
 				{ title: '마지막 Mini Project', address: 'https://macklinkim.github.io/study/css_study/css_study_23_challenges_community' },
 			],

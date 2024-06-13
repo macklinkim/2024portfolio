@@ -32,6 +32,7 @@
 		justify-content: center;
 		gap: 50px;
 		@include mobile {
+      gap: 10px;
 		}
 		.wrapper {
 			min-width: 1366px;
@@ -44,6 +45,7 @@
 			gap: 50px;
 			@include mobile {
 				flex-direction: column;
+        gap: 10px;
 			}
 			.imgContainer {
 				flex: 1;
@@ -52,8 +54,8 @@
         margin: 0 0 0 200px;
 				@include mobile {
           margin: unset;
-					width: 30%;
-					max-height: 300px;
+					width: 28%;
+					max-height: 270px;
 				}
         .swiperContainer{
           width: 100%;
@@ -94,9 +96,10 @@
         white-space: pre-wrap;
         // margin-top: -200px;
 				@include mobile {
-					gap: 5px;
+          flex:0;
+          padding-top: 20px;
+					gap: 10px;
 					transform: none !important;
-					padding: 10px;
 					align-items: center;
 					justify-content: center;
 				}
@@ -110,8 +113,8 @@
 					color: #888;
           white-space: pre-wrap;
 					@include mobile {
-						font-size: 1rem;
-            width: 100%;
+						font-size: 0.7rem;
+            width: 60%;
 					}
 				}
 				button {
@@ -124,7 +127,11 @@
 					cursor: pointer;
 					color: black;
 					font-weight: normal;
-          
+          @include mobile {
+						font-size: 0.7rem;
+            font-weight: bold;
+            height: 8px;
+					}
 				}
 				button:hover {
 					color: white;

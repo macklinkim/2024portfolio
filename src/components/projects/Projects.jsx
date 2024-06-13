@@ -33,9 +33,9 @@ function Projects() {
 				variants={variants}
 			>
 				<p>
-					Fullstack 개발자가 되기 위해 다양한 프로젝트를 진행했습니다.
+					Fullstack 개발자가 되기 위해,
 					<br />
-					미래를 향해 항상 공부하는 개발자
+					미래를 향해 공부하는 개발자,
 				</p>
 				<hr />
 			</motion.div>
